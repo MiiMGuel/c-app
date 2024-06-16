@@ -1,4 +1,4 @@
-# CPP_AppTemplate
+# CAppTemplate
 a C application template with CMake
 
 # Adding Dependencies
