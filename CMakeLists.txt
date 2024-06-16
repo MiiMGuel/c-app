@@ -4,13 +4,19 @@ cmake_minimum_required(VERSION 3.17)
 # add_subdirectory("vendor/lib_name" EXCLUDE_FROM_ALL)
 
 project(App
-    VERSION 0.1
+    VERSION 0.1.0.0
     DESCRIPTION "a very nice Template"
     LANGUAGES C
 )
 
+configure_file(app_config.h.in app_config.h)
+
 add_executable(${PROJECT_NAME}
     "src/main.c"
+)
+
+target_include_directories(${PROJECT_NAME} PUBLIC
+    "${PROJECT_BINARY_DIR}"
 )
 
 # link the libraries
