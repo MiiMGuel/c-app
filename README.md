@@ -1,4 +1,4 @@
-# C-Lpp
+# C-App
 a C application template with CMake
 
 # Adding Dependencies
