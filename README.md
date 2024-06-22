@@ -1,4 +1,4 @@
-# CAppTemplate
+# C-Lpp
 a C application template with CMake
 
 # Adding Dependencies
