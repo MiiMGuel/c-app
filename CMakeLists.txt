@@ -15,12 +15,14 @@ add_executable(${PROJECT_NAME}
     "src/main.c"
 )
 
-target_include_directories(${PROJECT_NAME} PUBLIC
+target_include_directories(${PROJECT_NAME} 
+    PRIVATE
     "${PROJECT_BINARY_DIR}"
 )
 
 # link the libraries
-# target_link_libraries(${PROJECT_NAME}
+# target_link_libraries(${PROJECT_NAME} 
+#     PRIVATE
 #     lin_name
 # )
 
