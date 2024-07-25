@@ -9,15 +9,8 @@ project(App
     LANGUAGES C
 )
 
-configure_file(app_config.h.in app_config.h)
-
 add_executable(${PROJECT_NAME}
     "src/main.c"
-)
-
-target_include_directories(${PROJECT_NAME} 
-    PRIVATE
-    "${PROJECT_BINARY_DIR}"
 )
 
 # link the libraries
